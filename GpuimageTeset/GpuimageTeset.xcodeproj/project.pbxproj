@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8F199247B7229ADE3A2328 /* libPods-GpuimageTeset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E5C64FC1CD3AE615FBA6A /* libPods-GpuimageTeset.a */; };
 		80A760C41E83E41600700E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A760C31E83E41600700E9B /* main.m */; };
 		80A760C71E83E41600700E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A760C61E83E41600700E9B /* AppDelegate.m */; };
 		80A760CA1E83E41600700E9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A760C91E83E41600700E9B /* ViewController.m */; };
@@ -26,6 +27,9 @@
 		80A760CE1E83E41600700E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A760D11E83E41600700E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A760D31E83E41600700E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC35243B443B2FAB00E2B572 /* Pods-GpuimageTeset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpuimageTeset.release.xcconfig"; path = "Pods/Target Support Files/Pods-GpuimageTeset/Pods-GpuimageTeset.release.xcconfig"; sourceTree = "<group>"; };
+		C27D03D1B545F4706F8E16BC /* Pods-GpuimageTeset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GpuimageTeset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GpuimageTeset/Pods-GpuimageTeset.debug.xcconfig"; sourceTree = "<group>"; };
+		C96E5C64FC1CD3AE615FBA6A /* libPods-GpuimageTeset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GpuimageTeset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8F199247B7229ADE3A2328 /* libPods-GpuimageTeset.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				80A760C11E83E41600700E9B /* GpuimageTeset */,
 				80A760C01E83E41600700E9B /* Products */,
+				E54A96CD07AC534CCC2E35FE /* Pods */,
+				8820C56B899C708BCCC20542 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8820C56B899C708BCCC20542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C96E5C64FC1CD3AE615FBA6A /* libPods-GpuimageTeset.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E54A96CD07AC534CCC2E35FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C27D03D1B545F4706F8E16BC /* Pods-GpuimageTeset.debug.xcconfig */,
+				AC35243B443B2FAB00E2B572 /* Pods-GpuimageTeset.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80A760D61E83E41600700E9B /* Build configuration list for PBXNativeTarget "GpuimageTeset" */;
 			buildPhases = (
+				7D3C2949F0FF9CC087AF4CB5 /* [CP] Check Pods Manifest.lock */,
 				80A760BB1E83E41600700E9B /* Sources */,
 				80A760BC1E83E41600700E9B /* Frameworks */,
 				80A760BD1E83E41600700E9B /* Resources */,
+				A5C7035A1828712D06ABBF3E /* [CP] Embed Pods Frameworks */,
+				89D3D4D37DE5AD1135AD5217 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D3C2949F0FF9CC087AF4CB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89D3D4D37DE5AD1135AD5217 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GpuimageTeset/Pods-GpuimageTeset-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C7035A1828712D06ABBF3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GpuimageTeset/Pods-GpuimageTeset-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80A760BB1E83E41600700E9B /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		80A760D71E83E41600700E9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C27D03D1B545F4706F8E16BC /* Pods-GpuimageTeset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GpuimageTeset/Info.plist;
@@ -281,6 +357,7 @@
 		};
 		80A760D81E83E41600700E9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC35243B443B2FAB00E2B572 /* Pods-GpuimageTeset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GpuimageTeset/Info.plist;
@@ -309,6 +386,7 @@
 				80A760D81E83E41600700E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
