@@ -6,6 +6,5 @@ target 'GpuimageTeset' do
   # use_frameworks!
 
   # Pods for GpuimageTeset
-pod 'GPUImage'
 pod 'Masonry'
 end
