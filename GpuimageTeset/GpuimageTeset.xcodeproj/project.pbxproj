@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3E8F199247B7229ADE3A2328 /* libPods-GpuimageTeset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C96E5C64FC1CD3AE615FBA6A /* libPods-GpuimageTeset.a */; };
+		808D831F1E84EFA70083920F /* StyleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 808D831E1E84EFA70083920F /* StyleCollectionViewCell.m */; };
+		808D83241E84F8390083920F /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 808D83231E84F8390083920F /* ImageUtil.m */; };
 		80A760C41E83E41600700E9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A760C31E83E41600700E9B /* main.m */; };
 		80A760C71E83E41600700E9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A760C61E83E41600700E9B /* AppDelegate.m */; };
 		80A760CA1E83E41600700E9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A760C91E83E41600700E9B /* ViewController.m */; };
@@ -17,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		808D831D1E84EFA70083920F /* StyleCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleCollectionViewCell.h; sourceTree = "<group>"; };
+		808D831E1E84EFA70083920F /* StyleCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleCollectionViewCell.m; sourceTree = "<group>"; };
+		808D83211E84F8390083920F /* ColorMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorMatrix.h; sourceTree = "<group>"; };
+		808D83221E84F8390083920F /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		808D83231E84F8390083920F /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
 		80A760BF1E83E41600700E9B /* GpuimageTeset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GpuimageTeset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A760C31E83E41600700E9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80A760C51E83E41600700E9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		808D831C1E84EF920083920F /* customeCell */ = {
+			isa = PBXGroup;
+			children = (
+				808D831D1E84EFA70083920F /* StyleCollectionViewCell.h */,
+				808D831E1E84EFA70083920F /* StyleCollectionViewCell.m */,
+			);
+			path = customeCell;
+			sourceTree = "<group>";
+		};
+		808D83201E84F8390083920F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				808D83211E84F8390083920F /* ColorMatrix.h */,
+				808D83221E84F8390083920F /* ImageUtil.h */,
+				808D83231E84F8390083920F /* ImageUtil.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		80A760B61E83E41600700E9B = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +91,8 @@
 		80A760C11E83E41600700E9B /* GpuimageTeset */ = {
 			isa = PBXGroup;
 			children = (
+				808D83201E84F8390083920F /* Model */,
+				808D831C1E84EF920083920F /* customeCell */,
 				80A760C51E83E41600700E9B /* AppDelegate.h */,
 				80A760C61E83E41600700E9B /* AppDelegate.m */,
 				80A760C81E83E41600700E9B /* ViewController.h */,
@@ -137,6 +165,7 @@
 				TargetAttributes = {
 					80A760BE1E83E41600700E9B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = RYWQLEHRAM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -225,9 +254,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				808D831F1E84EFA70083920F /* StyleCollectionViewCell.m in Sources */,
 				80A760CA1E83E41600700E9B /* ViewController.m in Sources */,
 				80A760C71E83E41600700E9B /* AppDelegate.m in Sources */,
 				80A760C41E83E41600700E9B /* main.m in Sources */,
+				808D83241E84F8390083920F /* ImageUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +379,7 @@
 			baseConfigurationReference = C27D03D1B545F4706F8E16BC /* Pods-GpuimageTeset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RYWQLEHRAM;
 				INFOPLIST_FILE = GpuimageTeset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = biyao.GpuimageTeset;
@@ -360,6 +392,7 @@
 			baseConfigurationReference = AC35243B443B2FAB00E2B572 /* Pods-GpuimageTeset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RYWQLEHRAM;
 				INFOPLIST_FILE = GpuimageTeset/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = biyao.GpuimageTeset;
